@@ -43,8 +43,7 @@ afterEvaluate{
     publishing {
         publications {
             release(MavenPublication){
-                from components.release
-
+                from components.findByName('release')
                 groupId = 'com.github.ShivanshKumar4265'
                 artifactId = 'indianpincode'
                 version = '1.0.0'
